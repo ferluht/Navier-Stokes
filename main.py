@@ -1,4 +1,4 @@
-__author__ = 'Walrus'
+__author__ = 'ferluht'
 
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import cm
@@ -168,8 +168,6 @@ while udiff > .005:
     stepcount += 1
 
 fig = pyplot.figure(figsize = (10,10), dpi=100)
-#pyplot.quiver(X, Y, u, v);
 pyplot.pcolor(X,Y,p)
 pyplot.streamplot(X, Y, u, v, density=2, linewidth=1, arrowsize=2, arrowstyle='->')
-#pyplot.scatter(X, Y, p**3, alpha=0.5)
 pyplot.show()
